@@ -17,6 +17,7 @@ function getMoves() {
     if ((moveNumber % 2) === 0) {
       console.log('first player played');
       $(this).html('X');
+      $(this).unbind();
       currentMoveIndex = parseInt(this.value);
       gameboard[currentMoveIndex] = 'X';
       newGameboard = gameboard;
@@ -25,7 +26,7 @@ function getMoves() {
           if ( $.inArray(value[0], xPlayerIndex) !== -1 && $.inArray(value[1], xPlayerIndex) !== -1 && $.inArray(value[2], xPlayerIndex) !== -1) {
               $('h2').html(nameOne.toUpperCase() + ' WON THIS GAME!');
               firstPlayerWins += 1;
-                if (firstPlayerWins === 5);
+                if (firstPlayerWins.length === 5);
                   console.log(nameOne + " wins the game!");
           }
         })
@@ -43,7 +44,7 @@ function getMoves() {
               // winner = secondPlayer;
           }
         })
-    } else if (moveNumber === 9) {
+    } else if (xPlayerIndex.length === 5); {
         $('h2').html('IT IS A DRAW!');
       }   
     moveNumber += 1;
@@ -63,18 +64,3 @@ $('.refresh-button').on('click', reload);
     function reload() {
       window.location.reload();
   }
-
-
-// function playToFive() {
-//     while (firstPlayerWins < 5 && secondPlayerWins < 5)  {
-//       getMoves();
-
-//         if (firstPlayerWins === 5) {
-//             console.log("Player one wins the game!");
-//         } else {
-//             console.log("Player two wins the game!");
-//         }
-// }
-
-// playToFive();
-

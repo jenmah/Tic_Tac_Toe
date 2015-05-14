@@ -1,5 +1,5 @@
 .grey-nav {
-  background-color: rgba(220, 220, 220, 1);
+  background-color: rgba(89, 89, 91, 1);
   width: 15%;
   height: 102%;
   position: absolute;
@@ -8,7 +8,7 @@
 }
 
 .gameboard {
-  margin: 9% 20%;
+  margin: 10% 20%;
   display: inline-block;
 }
 
@@ -36,9 +36,14 @@ hr {
   height: 1px;
 }
 
+ul {
+  margin: 2% 0;
+  padding: 0 0;
+}
+
 .button {
-  width: 80px;
-  height: 80px;
+  width: 85px;
+  height: 85px;
   border: 1px solid rgba(190, 190, 190, 1);
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -92,7 +97,7 @@ input {
 h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
-  color: rgba(130, 130, 130, 1);
+  color: rgba(249, 207, 12, 1);
   font-size: 27px;
   letter-spacing: 3px;
   margin: 0 0;
@@ -111,9 +116,9 @@ h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
   color: rgba(130, 130, 130, 1);
-  font-size: 15px;
+  font-size: 14px;
   letter-spacing: 1px;
-  margin: 5% 0 0 0;
+  margin: 3% 0 0 0;
 }
 
 h4 {
@@ -123,6 +128,15 @@ h4 {
   font-size: 12px;
   letter-spacing: 1px;
   margin: 1% 0 3% 0;
+}
+
+h5 {
+  font-family: 'EB Garamond', serif;
+  font-weight: 400;
+  color: rgba(170, 170, 170, 1);
+  font-size: 14px;
+  line-height: 20px;
+  margin: 0 0;
 }
 
 p {
@@ -135,10 +149,29 @@ p {
 }
 
 .logo {
-  width: 95%;
-  margin: 90% auto;
+  width: 80%;
+  margin: 72% 10px 0px 15px;
 }
 
-.button:hover{
-     background: rgba(240, 240, 240, 1);
+.button:hover {
+     background: rgba(249, 207, 12, 1);
+}
+
+.name-button:hover {
+     background: rgba(249, 207, 12, 1);
+     color: white;
+}
+
+.refresh-button:hover {
+     background: rgba(249, 207, 12, 1);
+     color: white;
+}
+
+.player-one-scoreboard {
+  display: inline-block;
+  margin-right: 9%;
+}
+
+.player-two-scoreboard {
+  display: inline-block;
 }
