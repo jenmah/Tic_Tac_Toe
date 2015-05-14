@@ -23,10 +23,10 @@ function getMoves() {
       xPlayerIndex.push(currentMoveIndex);
         $.each(winningCombinations, function(index, value) {
           if ( $.inArray(value[0], xPlayerIndex) !== -1 && $.inArray(value[1], xPlayerIndex) !== -1 && $.inArray(value[2], xPlayerIndex) !== -1) {
-              $('h2').html('PLAYER ONE WON!');
+              $('h2').html(nameOne.toUpperCase() + ' WON THIS GAME!');
               firstPlayerWins += 1;
                 if (firstPlayerWins === 5);
-                  console.log("Player one wins the game!");
+                  console.log(nameOne + " wins the game!");
           }
         })
     } else if ((moveNumber % 2) !== 0) {
