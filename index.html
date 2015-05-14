@@ -3,6 +3,8 @@
 <head>
   <link rel="stylesheet" type="text/css" href="./css/style.css">
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:400,800,900,700,600,500,300,200,100' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=EB+Garamond' rel='stylesheet' type='text/css'>
   <title>Tic Tac Toe Board</title>
 </head>
 
@@ -10,43 +12,64 @@
 
   <body>
 
-  <div class="tic-tac-toe-board">
-      
-      <ul class="row-zero">
-        <button class="button" id="zero" value="0"></button>
-        <button class="button" id="one" value="1"> </button>
-        <button class="button" id="two" value="2"> </button>
-      </ul>
+    <div class="grey-nav">
+      <img class="logo" src="http://i.imgur.com/0smcDMm.png">
+    </div><!-- closes grey-nav div -->
 
-      <ul class="row-one">
-        <button class="button" id="three" value="3"> </button>
-        <button class="button" id="four" value="4"> </button>
-        <button class="button" id="five" value="5"> </button>
-      </ul>
+  <div class="gameboard">  
+    <h1>LET'S PLAY A GAME</h1>
+    <hr>
+    <div class="tic-tac-toe-board">
+        
+        <ul class="row-zero">
+          <button class="button" id="zero" value="0"></button>
+          <button class="button" id="one" value="1"> </button>
+          <button class="button" id="two" value="2"> </button>
+        </ul>
 
-      <ul class="row-two">
-        <button class="button" id="six" value="6"> </button>
-        <button class="button" id="seven" value="7"> </button>
-        <button class="button" id="eight" value="8"> </button>
-      </ul>
+        <ul class="row-one">
+          <button class="button" id="three" value="3"> </button>
+          <button class="button" id="four" value="4"> </button>
+          <button class="button" id="five" value="5"> </button>
+        </ul>
 
-  </div>
+        <ul class="row-two">
+          <button class="button" id="six" value="6"> </button>
+          <button class="button" id="seven" value="7"> </button>
+          <button class="button" id="eight" value="8"> </button>
+        </ul>
 
-  <input type="text" placeholder="what's your name player one?" id="new-item"><button class="name-button" id="player-one-name">SUBMIT</button>
+        <button class="refresh-button" value="Reload Page">PLAY AGAIN</button>
 
+    </div>
 
-  <h2>SCOREBOARD</h2>
+    <div class="scoreboard">
 
-  <div class=player-X>
-    <h3>PLAYER X WINS</h3>
-  </div>
+      <h3>LIVE SCOREBOARD</h3>
+      <h2>GAME ON</h2>
 
-  <div class=player-Y>
-    <h3>PLAYER Y WINS</h3>
-  </div>
-  <button class="refresh-button" value="Reload Page">Play Again</button>
+      <input type="text" placeholder="first player name" id="player-one-name">
+      <input type="text" placeholder="second player name" id="player-two-name"><button class="name-button" id="player-two-name">SUBMIT</button>
+
+      <h3>DON'T KNOW HOW TO PLAY?</h3>
+      <h4>THAT'S EMBARASSING.</h4>
+      <p>Also known as Noughts & Crosses or Xs and Os, Tic Tac Toe is a two player game with the objective of placing three respective marks in either a horizontal, vertical, or diagonal row.</p> 
+
+    </div><!-- closes the scoreboard div -->
+
+</div><!-- closes the gameboard div -->
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="scripts/main.js"></script>
   </body>
 </html>
+
+
+
+<!--   <div class=player-X>
+    <h3>PLAYER X WINS</h3>
+  </div>
+
+  <div class=player-Y>
+    <h3>PLAYER Y WINS</h3>
+  </div> -->
