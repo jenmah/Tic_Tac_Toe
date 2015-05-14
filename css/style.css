@@ -1,27 +1,99 @@
-.grey-nav {
-  background-color: rgba(89, 89, 91, 1);
-  width: 15%;
-  height: 102%;
-  position: absolute;
-  margin: -10px;
-  padding: -10px;
-}
-
 .gameboard {
-  margin: 10% 20%;
+  margin: 1px 20%;
   display: inline-block;
+  text-align: center;
 }
 
 .tic-tac-toe-board {
+  vertical-align: top;
+  display: block;
+  text-align: center;
+  margin-top: 25px;
+}
+
+
+header {
+  margin-bottom: 0;
+}
+
+.three-dividers {
+  text-align: center;
+  margin-bottom: 12%;
+  margin-top: 9%;
+/*  border: 1px solid red;*/
+}
+
+.vertical-header {
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  writing-mode: lr-tb;
+  width: 170px;
+  border-top: 1px solid grey;
+/*  border: 1px solid red;*/
+}
+
+.divider-one {
   display: inline-block;
   vertical-align: top;
-  margin-right: 4%;
+/*  border: 1px solid red;*/
+  margin-right: 100px;
+}
+
+.divider-two {
+  display: inline-block;
+  vertical-align: top;
+/*  border: 1px solid red;*/
+  margin-right: 100px;
+}
+
+.divider-three {
+  display: inline-block;
+  vertical-align: top;
+/*  border: 1px solid red;*/
+  margin-right: 100px;
+}
+
+.vertical-one {
+  display: inline-block;
+  width: 180px;
+  vertical-align: top;
+  position: relative;
+  position: absolute;
+  margin: -124px 30px;
+}
+
+.vertical-two {
+  display: inline-block;
+  width: 180px;
+  vertical-align: top;
+  position: absolute;
+  margin: -124px 30px;
+}
+
+.vertical-three {
+  display: inline-block;
+  width: 180px;
+  vertical-align: top;
+  position: absolute;
+  margin: -124px 30px;
+}
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  color: rgba(130, 130, 130, 1);
+  font-size: 13px;
+  line-height: 20px;
+  text-align: left;
 }
 
 .scoreboard {
-  display: inline-block;
+  display: block;
   vertical-align: top;
   width: 50%;
+  text-align: center;
+  margin: 0 0;
 }
 
 .rowzero {
@@ -29,21 +101,40 @@
 }
 
 hr {
-  color: rgba(210, 210, 210, 0.5);
-  width: 100%;
+  width: 37%;
   border: none;
-  background-color: grey;
+  background-color: rgba(180, 180, 180, 1);
   height: 1px;
+  margin: 2px auto;
+  padding: 0 0;
+}
+
+.hr-test {
+  width: 20px;
+  text-align: center;
+  display: inline;
+  margin: 0 auto;
+}
+
+.vertical-hr {
+  display: block;
+  width: 1px;
+  height: 55px;
+  margin-top: -4px;
+  text-align: center;
+  background-color: rgba(180, 180, 180, 1);
+  margin-right: 100px;
+  display: inline;
 }
 
 ul {
-  margin: 2% 0;
+  margin: 3px 0;
   padding: 0 0;
 }
 
 .button {
-  width: 85px;
-  height: 85px;
+  width: 80px;
+  height: 80px;
   border: 1px solid rgba(190, 190, 190, 1);
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
@@ -60,7 +151,6 @@ ul {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: rgba(170, 170, 170, 1);
-  margin: 1% 1%;
   font-size: 12px;
   background-color: white;
   vertical-align: top;
@@ -73,79 +163,90 @@ ul {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   color: rgba(170, 170, 170, 1);
-  margin: 1% 1%;
-  font-size: 12px;
+  margin-top: 12px;
+  font-size: 10px;
   background-color: white;
   vertical-align: top;
   letter-spacing: 1px;
+  display: block;
 }
 
 input {
   height: 22%;
-  width: 35%;
+  width: 157px;
   border-top: 0px solid;
   border-right: 0px solid;
   border-left: 0px solid;
   border-bottom: 1px solid rgba(170, 170, 170, 1);
   color: rgba(170, 170, 170, 1);
-  margin: 1% 1%;
+  margin: 1% 0;
   background-color: white;
   vertical-align: top;
   outline: 0;
+  display: block;
+}
+
+.name-boxes {
+  text-align: center;
 }
 
 h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  color: rgba(249, 207, 12, 1);
-  font-size: 27px;
-  letter-spacing: 3px;
-  margin: 0 0;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: rgba(239, 78, 96, 1);
+  font-size: 47px;
+  margin: 0 0 5px 0;
+  text-align: center;
 }
 
 h2 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: rgba(170, 170, 170, 1);
-  font-size: 12px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: rgba(239, 78, 96, 1);
+  font-size: 17px;
   letter-spacing: 1px;
-  margin: 1% 0 3% 0;
+  margin: 1% 0 4px 0;
+  text-align: center;
 }
 
 h3 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
   color: rgba(130, 130, 130, 1);
   font-size: 14px;
   letter-spacing: 1px;
-  margin: 3% 0 0 0;
+  margin: 0 0;
+  text-align: center;
 }
 
 h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  color: rgba(170, 170, 170, 1);
-  font-size: 12px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  color: rgba(239, 78, 96, 1);
+  font-size: 17px;
   letter-spacing: 1px;
-  margin: 1% 0 3% 0;
+  margin: 1% 0 0 0;
+  text-align: center;
 }
 
 h5 {
-  font-family: 'EB Garamond', serif;
+  font-family: 'Roboto', sans-serif;
+  font-size: 11px;
   font-weight: 400;
-  color: rgba(170, 170, 170, 1);
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0 0;
+  color: rgba(239, 78, 96, 1);
+  text-align: left;
+  letter-spacing: 3px;
+  margin-top: 8px
 }
 
-p {
-  font-family: 'EB Garamond', serif;
+h6 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
   font-weight: 400;
-  color: rgba(170, 170, 170, 1);
-  font-size: 14px;
-  line-height: 20px;
-  margin: 0 0;
+  color: rgba(239, 78, 96, 1);
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0 0 11px 0;
 }
 
 .logo {
@@ -154,17 +255,23 @@ p {
 }
 
 .button:hover {
-     background: rgba(249, 207, 12, 1);
+  /*background: rgba(239, 78, 96, 1);*/
+  border: none;
+  background-color: gray;
+  background-image: linear-gradient(90deg, transparent 50%, rgba(255,255,255,.5) 50%);
+  background-size: 14px 14px;
 }
 
 .name-button:hover {
-     background: rgba(249, 207, 12, 1);
-     color: white;
+  background: rgba(239, 78, 96, 1);
+  color: white;
+  border: 1px solid rgba(239, 78, 96, 1);
 }
 
 .refresh-button:hover {
-     background: rgba(249, 207, 12, 1);
-     color: white;
+  background: rgba(239, 78, 96, 1);
+  color: white;
+  border: 1px solid rgba(239, 78, 96, 1);
 }
 
 .player-one-scoreboard {

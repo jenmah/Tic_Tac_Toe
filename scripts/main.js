@@ -6,8 +6,8 @@ var winningCombinations = [[0, 1, 2], [3, 4, 5], [6, 7, 8], [0, 3, 6], [1, 4, 7]
 var moveNumber = 0;
 var xPlayerIndex = [];
 var yPlayerIndex = [];
-var firstPlayerWins = 0;
-var secondPlayerWins = 0;
+// var firstPlayerWins = 0;
+// var secondPlayerWins = 0;
 var winner = '';
 var nameOne = '';
 var nameTwo = '';
@@ -33,6 +33,7 @@ function getMoves() {
     } else if ((moveNumber % 2) !== 0) {
       console.log('second player played');
       $(this).html('O');
+      $(this).unbind();
       currentMoveIndex = parseInt(this.value);
       gameboard[currentMoveIndex] = 'O';
       newGameboard = gameboard;
@@ -50,6 +51,11 @@ function getMoves() {
     moveNumber += 1;
 } 
 
+
+// if (xPlayerIndex.length === 5); {
+//         $('h2').html('IT IS A DRAW!');
+// }
+
 // Collect names from the first and second player so they appear on the scoreboard
 $('.name-button').on('click', function(event) {
   nameOne = $('#player-one-name').val();
@@ -59,8 +65,31 @@ $('.name-button').on('click', function(event) {
 });
 
 
+
+
+
+// $('.player-one-name').on('keypress', function(event) {
+//   if (event.which === 13) {
+//   nameOne = $(this).val();
+//   console.log(nameOne);
+//   }
+// });
+
+// $('.player-two-name').on('keypress', function(event) {
+//   if (event.which === 13) {
+//   nameTwo = $(this).val();
+//   console.log(nameTwo);
+//   }
+// });
+
+
 // Page refreshes and board clears when refresh button is clicked
 $('.refresh-button').on('click', reload);
-    function reload() {
-      window.location.reload();
-  }
+  function reload() {
+  gameboard = ['0','1','2','3','4','5','6','7','8'];
+  newGameboard = [];
+  xPlayerIndex = [];
+  yPlayerIndex = [];
+  $('.button').html('');
+  // window.location.reload();
+}
