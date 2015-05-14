@@ -10,6 +10,7 @@ var yPlayerIndex = [];
 var firstPlayerWins = 0;
 var secondPlayerWins = 0;
 var winner = '';
+var nameOne = '';
 
 $('.button').on('click', getMoves);
 function getMoves() {
@@ -24,10 +25,11 @@ function getMoves() {
           if ( $.inArray(value[0], xPlayerIndex) !== -1 && $.inArray(value[1], xPlayerIndex) !== -1 && $.inArray(value[2], xPlayerIndex) !== -1) {
               $('h2').html('PLAYER ONE WON!');
               firstPlayerWins += 1;
-              winner = firstPlayer;
+                if (firstPlayerWins === 5);
+                  console.log("Player one wins the game!");
           }
         })
-    } else {
+    } else if ((moveNumber % 2) !== 0) {
       console.log('second player played');
       $(this).html('O');
       currentMoveIndex = parseInt(this.value);
@@ -38,13 +40,20 @@ function getMoves() {
           if ( $.inArray(value[0], yPlayerIndex) !== -1 && $.inArray(value[1], yPlayerIndex) !== -1 && $.inArray(value[2], yPlayerIndex) !== -1) {
               $('h2').html('PLAYER TWO WON!');
               secondPlayerWins += 1;
-              winner = secondPlayer;
+              // winner = secondPlayer;
           }
         })
-    }
+    } else if (xPlayerIndex.length === 5) {
+        $('h2').html('IT IS A DRAW!');
+      }   
     moveNumber += 1;
 } 
 
+
+$('.name-button').on('click', function(event) {
+  nameOne = $('#new-item').val();
+  console.log(nameOne);
+});
 
 
 
