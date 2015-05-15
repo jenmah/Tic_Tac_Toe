@@ -52,35 +52,15 @@ function getMoves() {
 } 
 
 
-// if (xPlayerIndex.length === 5); {
-//         $('h2').html('IT IS A DRAW!');
-// }
-
 // Collect names from the first and second player so they appear on the scoreboard
 $('.name-button').on('click', function(event) {
   nameOne = $('#player-one-name').val();
   console.log(nameOne);
   nameTwo = $('#player-two-name').val();
   console.log(nameTwo);
+  // ('.name-button').html('thanks!');
 });
 
-
-
-
-
-// $('.player-one-name').on('keypress', function(event) {
-//   if (event.which === 13) {
-//   nameOne = $(this).val();
-//   console.log(nameOne);
-//   }
-// });
-
-// $('.player-two-name').on('keypress', function(event) {
-//   if (event.which === 13) {
-//   nameTwo = $(this).val();
-//   console.log(nameTwo);
-//   }
-// });
 
 
 // Page refreshes and board clears when refresh button is clicked
